@@ -1,6 +1,6 @@
 A simple game of Tenzies.
 
-Link: []
+Link: [https://tenzies-hazel-seven.vercel.app/]
 
 # Aim of the Game
 Your goal is to have the same number on all your dice.
