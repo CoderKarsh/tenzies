@@ -1,7 +1,7 @@
 A simple game of Tenzies.
 ![alt text](image.png)
 
-Link: [https://vercel.com/kumar-utkarshs-projects-4f688f9b/tenzies]
+Link: [https://tenzies-hazel-seven.vercel.app/]
 
 # Aim of the Game
 Your goal is to have the same number on all your dice.
