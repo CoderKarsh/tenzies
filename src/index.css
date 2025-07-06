@@ -1,0 +1,101 @@
+:root {
+    --text-size: 1.25rem;
+    --heading-size: 3rem;
+
+    --neutral-100: #ffffff;
+    --neutral-200: #f5f5f5;
+    --neutral-700: #1d1d1d;
+    --neutral-900: #000000;
+
+    --color-bg: #0B2434;
+    --color-primary: #5035FF;
+
+
+    --text-color: var(--neutral-700);
+    --background-color: var(--color-bg)
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Karla, sans-serif;
+    color: var(--text-color);
+}
+
+body{
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+div#root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem; 
+    background-color: #f5f5f5 ;
+    aspect-ratio: 1 / 1;
+    width: clamp(270px, 90vw, 720px);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 4px rgba(0,0,0,0.25);
+}
+
+h1 {
+    font-size: var(--heading-size);
+}
+
+p {
+    font-size: var(--text-size);
+    text-align: center;
+}
+
+section.dice-container {
+    flex-shrink: 0;
+    display: grid;
+    justify-content: center;
+    width: clamp(300px, 100%, 540px);
+    grid-template-columns: repeat(5, 1fr);
+    gap: clamp(0.5rem, 3vw, 1rem);
+    
+}
+
+button {
+    cursor: pointer;
+    font-size: var(--text-size);
+    border: none;
+    border-radius: 4px;
+}
+
+button.die-btn {
+    aspect-ratio: 1 / 1;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0,0,0,0.15);
+    font-size: 1.75rem;
+}
+
+button.roll-btn {
+    font-size: 1.25rem;
+    padding: 0.75em 2em;
+    background-color: #5035FF;
+    color: white;
+}
+
+
+@media (max-width: 480px){
+
+section.dice-container{
+        grid-template-columns: repeat(2, 80px);
+}
+}
