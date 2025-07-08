@@ -21,3 +21,4 @@ Your goal is to have the same number on all your dice.
 1. Using useState() and useEffect()
 2. Derived state and why it is bad
 3. every(), fill() methods on arrays
+4. nanoid npm package
